@@ -215,7 +215,7 @@
 				pinctrl_uart7_PB: uart7-PB {
 					nuvoton,pins =
 						<1 4 5 0
-						 1 6 5 0;
+						 1 6 5 0>;
 				};
 				pinctrl_uart7_PC: uart7-PC {
 					nuvoton,pins =
