@@ -75,10 +75,6 @@
 			status = "okay";
 		};
 
-		uart9: serial@b0079000 {
-			status = "disabled";
-		};
-
 		can0: can@b00a0000 {
 			status = "disabled";
 		};
@@ -225,7 +221,7 @@
 
 
 		i2c2: i2c2@b0082000 {
-			status = "okay";
+			status = "disabled";
 			pinctrl-0 = <&pinctrl_i2c2_PB>;
 		};
 
