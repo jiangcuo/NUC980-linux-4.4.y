@@ -222,9 +222,13 @@
 				pinctrl_uart7_PB: uart7-PB {
 					nuvoton,pins =
 						<1 4 5 0
+<<<<<<< HEAD
 						 1 5 5 0
 						 1 6 5 0
 						 1 7 5 0>;
+=======
+						 1 6 5 0>;
+>>>>>>> a8975c68ba996540051e90fa3c85ad41a7bfa09a
 				};
 
 				pinctrl_uart7_PF: uart7-PF {
