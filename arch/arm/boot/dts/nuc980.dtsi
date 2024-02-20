@@ -204,6 +204,13 @@
 						 0 4 1 0
 						 0 5 1 0>;
 				};
+				pinctrl_uart6_PD: uart6-PD {
+					nuvoton,pins =
+						<3 8 2 0
+						 3 9 2 0
+						 3 0xa 2 0
+						 3 0xb 2 0>;
+				};
 				pinctrl_uart6_PE: uart6-PE {
 					nuvoton,pins =
 						<4 8 5 0
@@ -215,8 +222,25 @@
 				pinctrl_uart7_PB: uart7-PB {
 					nuvoton,pins =
 						<1 4 5 0
-						 1 6 5 0;
+						 1 5 5 0
+						 1 6 5 0
+						 1 7 5 0>;
 				};
+
+				pinctrl_uart7_PF: uart7-PF {
+					nuvoton,pins =
+						<5 0 5 0
+						 5 1 5 0
+						 5 2 5 0
+						 5 3 5 0>;
+				};
+
+				pinctrl_uart7_PA: uart7-PA {
+					nuvoton,pins =
+						<0 0xd 6 0
+						 0 0xe 6 0>;
+				};
+
 				pinctrl_uart7_PC: uart7-PC {
 					nuvoton,pins =
 						<2 1 4 0
@@ -249,6 +273,14 @@
 			};
 
 			uart9 {
+				pinctrl_uart9_PE: uart9-PE {
+					nuvoton,pins =
+						<4 4 5 0
+						 4 5 5 0
+						 4 6 5 0
+						 4 7 5 0>;
+				};
+
 				pinctrl_uart9_PE_1: uart9-PE-1 {
 					nuvoton,pins =
 						<4 0xa 3 0
@@ -1325,6 +1357,19 @@
 			pinctrl-0 = <&pinctrl_uart8_PA_PG>;
 			status = "okay";
 		};
+
+		uart9: serial@b0079000 {
+			compatible = "nuvoton,nuc980-uart";
+			reg = <0xb0079000 0x1000>;
+			interrupts = <46 4 1>;
+			port-number = <9>;
+			map-addr = <0xf0079000>;
+			pinctrl-names = "default";
+			pinctrl-0 = <&pinctrl_uart9_PE>;
+			pdma-enable = <0>;
+			status = "disabled";
+		};
+
 		can0: can@b00a0000 {
 			compatible = "nuvoton,nuc980-can0";
 			reg = <0xb00a0000 0x1000>;

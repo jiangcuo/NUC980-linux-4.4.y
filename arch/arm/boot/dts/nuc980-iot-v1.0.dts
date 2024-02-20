@@ -273,7 +273,7 @@
 		};
 
 		sdh@b0018000 {
-			status = "okay";
+			status = "disabled";
 		};
 
 		emac0@b0012000 {
