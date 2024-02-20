@@ -24,7 +24,7 @@
 	apb {
 		uart1: serial@b0071000 {
 			pinctrl-names = "default";
-			pinctrl-0 = <&pinctrl_uart1_PF>;
+			pinctrl-0 = <&pinctrl_uart1_PA>;
 			pdma-enable = <1>;
 			status = "okay";
 		};
@@ -37,10 +37,7 @@
 		};
 
 		uart3: serial@b0073000 {
-			pinctrl-names = "default";
-			pinctrl-0 = <&pinctrl_uart3_PB>;
-			pdma-enable = <1>;
-			status = "okay";
+			status = "disabled";
 		};
 
 		uart4: serial@b0074000 {
@@ -59,7 +56,7 @@
 
 		uart6: serial@b0076000 {
 			pinctrl-names = "default";
-			pinctrl-0 = <&pinctrl_uart6_PD>;
+			pinctrl-0 = <&pinctrl_uart6_PA>;
 			pdma-enable = <1>;
 			status = "okay";
 		};
@@ -79,9 +76,6 @@
 		};
 
 		uart9: serial@b0079000 {
-			pinctrl-names = "default";
-			pinctrl-0 = <&pinctrl_uart9_PB_PE>;
-			pdma-enable = <1>;
 			status = "disabled";
 		};
 
